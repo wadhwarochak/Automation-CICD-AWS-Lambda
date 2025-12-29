@@ -3,4 +3,4 @@ PushToGithub.sh
 zData/
 CustomPush.sh
 .DS_Store
-.idea
+.idea/
