@@ -2,7 +2,7 @@ name: Build Lambda Function
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, new-stuff ]
     paths:
       - "src/**"
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
       - name: Create Zip file for Lambda function
         run: |
           cd src
-          zip -r ../code.zip .
+          zip -r code.zip .
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
